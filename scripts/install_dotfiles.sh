@@ -115,4 +115,4 @@ else
 fi
 
 log_task "Running '${INSTALL_SCRIPT}'"
-exec "${INSTALL_SCRIPT}"
+exec "bash ${INSTALL_SCRIPT}"
