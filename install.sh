@@ -1,4 +1,4 @@
-#!/bin/env sh
+#!/bin/bash
 
 # -e: exit on error
 # -u: exit on undefined variable
