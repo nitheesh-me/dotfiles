@@ -105,14 +105,12 @@ else
 fi
 
 if [ -f "${DOTFILES_DIR}/install.sh" ]; then
-  log_task "Running '${DOTFILES_DIR}/install.sh'"
   INSTALL_SCRIPT="${DOTFILES_DIR}/install.sh"
 elif [ -f "${DOTFILES_DIR}/install" ]; then
-  log_task "Running '${DOTFILES_DIR}/install'"
   INSTALL_SCRIPT="${DOTFILES_DIR}/install"
 else
   error "No install script found in '${DOTFILES_DIR}'"
 fi
 
 log_task "Running '${INSTALL_SCRIPT}'"
-exec "bash ${INSTALL_SCRIPT}"
+exec "${INSTALL_SCRIPT}"
